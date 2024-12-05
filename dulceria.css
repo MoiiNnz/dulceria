@@ -1,29 +1,51 @@
+
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 90px;
+    margin-left: -10px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 5px 5px;
   }
   
   /* Links inside the navbar */
   .navbar a {
+    font-family: ;
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #222121;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px;
     text-decoration: none;
+    margin: 10px;
+    margin-top: 20px;
+  }
+  
+.navbar .primerlink a {
+    margin-left: 80px;
   }
   
   /* Change background on mouse-over */
   .navbar a:hover {
     background: #ddd;
     color: black;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    padding: 14px;
   }
   
   /* Main content */
   .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    margin-top: 130px; /* Add a top margin to avoid content overlay */
+    color:black;
   }
+  
