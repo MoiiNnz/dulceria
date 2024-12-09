@@ -1,67 +1,60 @@
+
 *{
   margin: 0;
   padding: 0;
-  font-family: lato;
-
-
-}
-h2{
-  text-align: center;
-  margin-top: 50px;
-  font-size: 2rem;
+  box-sizing: border-box;
 }
 
-.main .contenedor1 .sliderframe{
-  width: 500px;
-  height: auto;
-  margin: 50px auto 0;
-  overflow: hidden;
-  animation: slide 15s infinite alternate ease-in-out;
+.slider_container{
+width: 600px;
+height: auto;
+margin: 200px auto 0;
+overflow: hidden;
+padding-top: 50px;
+padding-bottom: 50px;
 }
 
-.main .contenedor1 .sliderframe ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
+.slider_container img{
+  border-radius: 50px;
+  width: 600px;
 }
 
-.main .contenedor1 .sliderframe li{
-  list-style: none;
-  width: 100%;
+
+.slider_container ul{
+list-style: none;
+display: flex;
+animation: movimiento_slider 12s infinite alternate ease-in-out;
 }
 
-.main .contenedor1 .sliderframe img{
-  width: 100%;
-}
 
-@keyframes slide {
-  0% {margin-left: 0%}
-  20% {margin-left: 0%}
-
-  25% {margin-left: -100%}
-  45% {margin-left: -100%}
-
-  50% {margin-left: -200%}
-  70% {margin-left: -200%}
-
-  75% {margin-left: -300%}
-  95% {margin-left: -300%}
+ @keyframes movimiento_slider {
   
+  0%{ transform: translateX(0%);}
+  20%{ transform: translateX(0%);}
+
+  33.33%{ transform: translateX(-100%);}
+  53.33%{ transform: translateX(-100%);}
+
+  66.66%{ transform: translateX(-200%);}
+  100%{ transform: translateX(-200%);}
+
+ }
+
+
+
+
+.menulogo{
+  background-color: #ffc6e2;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 220px;
+  text-align: center;
+  margin-top: -8px;
+  padding: 20px;
 }
 
 body{
   background-color: #ffffff;
-}
-
-.menulogo{
-  background-color: #ffffff;
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  height: 250px;
-  text-align: center;
-  margin-top: -8px;
-  margin-left: -3px;
-  margin-right: -3px;
 }
 
 /* The navigation bar */
@@ -70,9 +63,9 @@ body{
     background-color: #ffffff;
     position: sticky; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
+    z-index: 1000;
     width: 100%; /* Full width */
     height: 90px;
-    margin-left: -10px;
     border-bottom-width: 0px;
     border-top-width: 0px;
     border-bottom-style: solid;
@@ -109,10 +102,15 @@ body{
   
   /* Main content */
   .main {
-    margin-top: 0px; /* Add a top margin to avoid content overlay */
+    /*margin-top: 0px;  Add a top margin to avoid content overlay */
     color:black;
   }
 
   .main .contenedor1{
-    background-color: #d8d0d0;
+    width: 800px;
+    background-color: #ff70b8;
+    margin: -200px auto 0;
+    margin-top: -150px;
+    margin-bottom: 100px;
+    border-radius: 100px;
   }
