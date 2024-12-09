@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "lobster";
+  src: url("./fonts/Lobster.otf") format("truetype");
+}
 
 *{
   margin: 0;
@@ -76,7 +80,7 @@ body{
   
   /* Links inside the navbar */
   .navbar a {
-    /*font-family: ;*/
+    font-family: "lobster";
     float: left;
     display: block;
     color: #222121;
@@ -87,6 +91,8 @@ body{
     margin-top: 20px;
   }
   
+
+
 .navbar .primerlink a {
     margin-left: 80px;
   }
